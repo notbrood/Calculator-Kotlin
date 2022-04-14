@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backApp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/calculated"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/box"
+        android:gravity="bottom|right"
+        android:paddingTop="0dp"
+        android:paddingRight="05dp"
+        android:textColor="@color/text"
+        android:textSize="50sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/n1"
+            android:layout_width="101dp"
+            android:layout_height="91dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/box"
+            android:includeFontPadding="false"
+            android:onClick="onDigit"
+            android:paddingTop="25dp"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/n2"
+            android:layout_width="91dp"
+            android:layout_height="91dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/box"
+            android:includeFontPadding="false"
+            android:onClick="onDigit"
+            android:paddingTop="25dp"
+            android:text="2"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/n3"
+            android:layout_width="91dp"
+            android:layout_height="91dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/box"
+            android:includeFontPadding="false"
+            android:onClick="onDigit"
+            android:paddingTop="25dp"
+            android:text="3"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/divide"
+            android:layout_width="91dp"
+            android:layout_height="91dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/box"
+            android:includeFontPadding="false"
+            android:onClick="onOperator"
+            android:paddingTop="25dp"
+            android:text="/"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/n4"
+            android:layout_width="85dp"
+            android:layout_height="91dp"
+            android:layout_margin="10dp"
+            android:background="@color/box"
+            android:includeFontPadding="false"
+            android:onClick="onDigit"
+            android:paddingTop="25dp"
+            android:text="4"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/n5"
+            android:layout_width="91dp"
+            android:layout_height="91dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/box"
+            android:includeFontPadding="false"
+            android:onClick="onDigit"
+            android:paddingTop="25dp"
+            android:text="5"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/n6"
+            android:layout_width="91dp"
+            android:layout_height="91dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/box"
+            android:includeFontPadding="false"
+            android:onClick="onDigit"
+            android:paddingTop="25dp"
+            android:text="6"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/multiply"
+            android:layout_width="91dp"
+            android:layout_height="91dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/box"
+            android:includeFontPadding="false"
+            android:onClick="onOperator"
+            android:paddingTop="25dp"
+            android:text="*"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/n7"
+            android:layout_width="85dp"
+            android:layout_height="91dp"
+            android:layout_margin="10dp"
+            android:background="@color/box"
+            android:includeFontPadding="false"
+            android:onClick="onDigit"
+            android:paddingTop="25dp"
+            android:text="7"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/n8"
+            android:layout_width="91dp"
+            android:layout_height="91dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/box"
+            android:includeFontPadding="false"
+            android:onClick="onDigit"
+            android:paddingTop="25dp"
+            android:text="8"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/n9"
+            android:layout_width="91dp"
+            android:layout_height="91dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/box"
+            android:includeFontPadding="false"
+            android:onClick="onDigit"
+            android:paddingTop="25dp"
+            android:text="9"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/add"
+            android:layout_width="91dp"
+            android:layout_height="91dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/box"
+            android:includeFontPadding="false"
+            android:onClick="onOperator"
+            android:paddingTop="25dp"
+            android:text="+"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/n0"
+            android:layout_width="86dp"
+            android:layout_height="91dp"
+            android:layout_margin="10dp"
+            android:background="@color/box"
+            android:includeFontPadding="false"
+            android:onClick="onDigit"
+            android:paddingTop="25dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/dot"
+            android:layout_width="91dp"
+            android:layout_height="91dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/box"
+            android:includeFontPadding="false"
+            android:onClick="onDecimal"
+            android:paddingTop="25dp"
+            android:text="."
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/clr"
+            android:layout_width="91dp"
+            android:layout_height="91dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/box"
+            android:includeFontPadding="false"
+            android:onClick="onDigit"
+            android:paddingTop="25dp"
+            android:text="clr"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/minus"
+            android:layout_width="91dp"
+            android:layout_height="91dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/box"
+            android:includeFontPadding="false"
+            android:onClick="onOperator"
+            android:paddingTop="25dp"
+            android:text="-"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/equal"
+            android:layout_width="39dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/box"
+            android:includeFontPadding="false"
+            android:onClick="calculate"
+            android:paddingTop="18dp"
+            android:text="="
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+</LinearLayout>
