@@ -2,7 +2,7 @@
 
 ## Description
 
- A simple calculator for Android in Kotlin 
+A calculator made in Kotlin, Android Studio, with basic arithmetic operation to learn about Kotlin and Android Studio
 
 ## Libs and Techniques
 
