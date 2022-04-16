@@ -8,7 +8,7 @@ A calculator made in Kotlin, Android Studio, with basic arithmetic operation to 
 
 * [Kotlin](https://kotlinlang.org/)
 * [Coolors](https://coolors.co) 
-* [View Binding](https://developer.android.com/topic/libraries/view-binding)
+* [Android Studio](https://developer.android.com/docs)
 
 ## Screenshots
 ![Screenshot1](Screenshots/ss1.png)
